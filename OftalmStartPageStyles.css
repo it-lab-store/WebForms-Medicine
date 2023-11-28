@@ -1,0 +1,120 @@
+/* MainPage */
+
+body {
+font-family: "Segoe UI";
+background-image: linear-gradient(to bottom right, #7d1fb8, #d9b1f2);
+block-size:705px;
+border: 2px solid #5f168c;
+/*background-color: #d9b1f2;*/
+}
+
+div.headerBlock {
+color: white;
+font-size: 30px;
+text-align: center;
+margin-left: 10%;
+margin-right: 10%;
+width: 80%;
+border: none;
+}
+
+p.pCf {
+color: white;
+font-size: 20px;
+margin-left: 40%;
+}
+/* for links styles************************/
+/*
+a:link, a:visited
+{
+color: black;
+text-decoration: none; 
+block-size: 100px;
+}
+
+a:hover
+{
+color: white;
+text-decoration: none; 
+}
+
+a:active
+{
+color: purple;	
+text-decoration: none; 
+}
+*/
+
+.center {
+color: black;
+border: 2px solid #5f168c;
+margin-top: 70px;
+margin-bottom: 100px;
+margin-right: 10%;
+margin-left: 10%;
+text-align: center;
+font-size: 28px;
+width: 80%;
+block-size: 100px;
+transition-duration: 0.4s;
+background-color: #ede1ed;
+text-decoration: none;        
+}
+
+.center:hover, .center:active {
+font-size: 32px; 
+color: white;
+background-color: #9400d3;
+border: 2px solid #5f168c;
+block-size: 100px;
+}
+
+.center:active {
+color: blue;
+}
+
+.button1, .button2, .button3
+{
+font-size: 20px;
+color: black;
+background-color: #d9b1f2;
+width: 40%;
+block-size: 60px;
+margin-left: 30%;
+margin-right: 30%;	
+border: 2px solid #5f168c;
+transition-duration: 0.4s;	
+}
+
+.button1:hover, .button2:hover, .button3:hover
+{
+font-size: 25px;
+color: white;
+background-color: #9400d3;
+width: 40%;
+margin-left: 30%;
+}
+
+.button1:active, .button2:active, .button3:active
+{
+font-size: 25px;
+color: blue;
+background-color: #black;
+width: 40%;
+margin-left: 30%;
+}
+/*margin*/
+.button1 {
+	
+}
+
+.button2 {	
+margin-top: 15px;  
+}
+
+.button3 {	
+margin-top: 50px;
+margin-bottom: 30px;
+background-color: #ba55d3;  
+}
+

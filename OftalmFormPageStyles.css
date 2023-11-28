@@ -1,0 +1,257 @@
+/**for all**********************************/
+body
+{
+	block-size: 2200px;
+}
+.mainBlock
+{
+	border: 2px dotted #5f168c;
+	block-size: 2150px;
+	margin: 5px 5px 5px 5px;
+}
+
+.fieldName
+{
+	color: black;
+	font-size: 16px;
+}
+
+p.p2{
+ color: white;
+ text-decoration: underline;
+ text-align: center;
+}
+
+.textFoot{
+ color: black;
+ text-decoration: none;
+ text-align: center;
+ margin-top: 200px;
+}
+
+/**custom styles*************************************/
+
+/***block B1**********************************/
+.flexContainerB1 {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: none;  
+}
+
+.flexContainerB1 > .tabFieldsB1 {
+	background-color: #d9b1f2; /* #ba55d3; */
+	border: 2px solid white;
+	width: 25%;
+	text-align: left;
+	line-height: 5px;
+	font-size: 50px;
+	block-size: 175px;
+	margin: 20px 20px 20px 20px;	
+}
+
+.textfieldB1
+{
+	width: 85%;
+	block-size: auto; /* высота поля */
+	margin: 5px 5px 5px 20px;
+}
+
+/***block B2**********************************/
+.flexContainerB2 {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: none;  
+}
+
+.flexContainerB2 > .tabFieldsB2 {
+	background-color: #d9b1f2; /*none;*/
+	border: 2px solid white;
+	width: 100%;
+	text-align: center;
+	line-height: 5px;
+	font-size: 50px;
+	block-size: 125px;
+	margin: 20px 20px 20px 20px;	
+}
+.textfieldB2
+{
+	width: 70%;
+	block-size: 75px;
+	margin: 20px 20px 20px 20px;
+}
+.textfieldB2-2
+{
+	width: 5%;
+	block-size: auto; /* высота поля */
+	margin: 20px 20px 20px 20px;
+}
+
+/***block B3**********************************/
+.flexContainerB3 {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: none;  
+}
+
+.flexContainerB3 > .tabFieldsB3 {
+	background-color: #d9b1f2; /*none;*/
+	border: 2px solid white;
+	width: 100%;
+	text-align: center;
+	line-height: 5px;
+	font-size: 50px;
+	block-size: 125px;
+	margin: 20px 20px 20px 20px;	
+}
+
+.textfieldB3
+{
+	width: 87.5%;
+	block-size: 75px; /* высота поля */
+	margin: 20px 20px 20px 20px;
+}
+
+/***block B4**********************************/
+.flexContainerB4 {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: none;  
+}
+
+.flexContainerB4 > .tabFieldsB4 {
+	background-color: #d9b1f2; /*none;*/
+	border: 2px solid white;
+	width: 20%;
+	text-align: center;
+	line-height: 5px;
+	font-size: 50px;
+	block-size: 75px;
+	margin: 20px 20px 20px 20px;	
+}
+
+.textfieldB4
+{
+	width: 70%;
+	block-size: auto; /* высота поля */
+	margin: 20px 20px 20px 20px;
+}
+
+/***block B5**********************************/
+.flexContainerB5 {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: none;  
+}
+
+.flexContainerB5 > .tabFieldsB5 {
+	background-color: #d9b1f2; /*none;*/
+	border: 2px solid white;
+	width: 100%;
+	text-align: center;
+	line-height: 5px;
+	font-size: 50px;
+	block-size: 125px;
+	margin: 20px 20px 20px 20px;	
+}
+
+.textfieldB5
+{
+	width: 80%;
+	block-size: 75px; /* высота поля */
+	margin: 20px 20px 20px 20px;
+}
+
+.textfieldB5-2
+{
+	width: 90%;
+	block-size: 75px; /* высота поля */
+	margin: 20px 20px 20px 20px;
+}
+
+/***block B6**********************************/
+.flexContainerB6 {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: none;  
+}
+
+.flexContainerB6 > .tabFieldsB6 {
+	background-color: #d9b1f2; /* #ba55d3; */
+	border: 2px solid white;
+	width: 100%;
+	text-align: left;
+	line-height: 5px;
+	font-size: 50px;
+	block-size: 125px;
+	margin: 20px 20px 20px 20px;	
+}
+
+.textfieldB6
+{
+	width: 90%;
+	block-size: auto; /* высота поля */
+	margin: 5px 5px 5px 20px;
+}
+
+/***block B7**********************************/
+.flexContainerB7 {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: none;  
+}
+
+.flexContainerB7 > .tabFieldsB7 {
+	background-color: #d9b1f2; /*none;*/
+	border: 2px solid white;
+	width: 100%;
+	text-align: center;
+	line-height: 5px;
+	font-size: 50px;
+	block-size: 125px;
+	margin: 20px 20px 20px 20px;	
+}
+
+.textfieldB7
+{
+	width: 85%;
+	block-size: 75px; /* высота поля */
+	margin: 20px 20px 20px 20px;
+}
+
+/***block B8**********************************/
+.flexContainerB8 {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: none;  
+}
+
+.flexContainerB8 > .tabFieldsB8 {
+	background-color: #d9b1f2; /* #ba55d3; */
+	border: 2px solid white;
+	width: 100%;
+	text-align: left;
+	line-height: 5px;
+	font-size: 50px;
+	block-size: 125px;
+	margin: 20px 20px 20px 20px;	
+}
+.textfieldB8
+{
+	width: 90%;
+	block-size: 75px; /* высота поля */
+	margin: 5px 5px 5px 20px;
+}
+
+.textfieldB8-2
+{
+	width: 90%;
+	block-size: auto; /* высота поля */
+	margin: 5px 5px 5px 20px;
+}
+
+.button3, .button3:hover
+{
+	width: 90%;
+	block-size: 50px; /* высота поля */
+	margin: 5px 5px 5px 22.5px;
+}
