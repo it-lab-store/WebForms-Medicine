@@ -1,0 +1,1617 @@
+Ôªø<?xml version="1.0" encoding="utf-8"?>
+<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSourceBaseOft1TableOft1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=localhost\OFTALMEXPRESS;Initial Catalog=BaseOft1</ConnectString>
+        <IntegratedSecurity>true</IntegratedSecurity>
+      </ConnectionProperties>
+      <rd:SecurityType>Integrated</rd:SecurityType>
+      <rd:DataSourceID>70660045-146e-425a-b190-b3a91d2d844e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSourceBaseOft1TableOft1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@ViewingDate">
+            <Value>=Parameters!ViewingDate.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT
+  TableOft1.SurName
+  ,TableOft1.FirstName
+  ,TableOft1.Patronymic
+  ,TableOft1.Gender
+  ,TableOft1.DateOfBirth
+  ,TableOft1.Age
+  ,TableOft1.Department
+  ,TableOft1.HistoryNumber
+  ,TableOft1.Complaints
+  ,TableOft1.Anamnesis
+  ,TableOft1.ObjectiveStatus
+  ,TableOft1.OngoingManipulations
+  ,TableOft1.IndicationOfEthambutol
+  ,TableOft1.Ethambutol–°ontraindicated
+  ,TableOft1.PresenceOfAIDS
+  ,TableOft1.DiagnosisDescription
+  ,TableOft1.CodeOfDiseaseMKB10
+  ,TableOft1.GroupeOfDiseasesMKB10
+  ,TableOft1.TheMainDiseaseCodeMKB10
+  ,TableOft1.Recommendations
+  ,TableOft1.DoctorName
+  ,TableOft1.ViewingDate
+  ,TableOft1.FirstInspection  
+  ,TableOft1.RepeatInspection
+  ,TableOft1.EmptyField1
+  ,TableOft1.RightEye
+  ,TableOft1.SferaCilindrPravGlaz
+  ,TableOft1.SignOfVizionPravGlaz
+  ,TableOft1.CorrectionPravGlaz
+  ,TableOft1.TotalValuePravGlaz
+  ,TableOft1.LeftEye
+  ,TableOft1.SferaCilindrLeviyGlaz
+  ,TableOft1.SignOfVizionLeviyGlaz
+  ,TableOft1.CorrectionLeviyGlaz
+  ,TableOft1.TotalValueLeviyGlaz
+  ,TableOft1.EmptyField2
+  ,TableOft1.PatientStatus
+  ,TableOft1.Primechaniya
+FROM
+  TableOft1
+WHERE
+  TableOft1.ViewingDate &gt;= @ViewingDate</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
+            <SelectedColumns>
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="SurName" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="FirstName" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="Patronymic" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="Gender" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="DateOfBirth" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="Age" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="Department" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="HistoryNumber" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="Complaints" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="Anamnesis" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="ObjectiveStatus" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="OngoingManipulations" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="IndicationOfEthambutol" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="Ethambutol–°ontraindicated" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="PresenceOfAIDS" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="DiagnosisDescription" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="CodeOfDiseaseMKB10" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="GroupeOfDiseasesMKB10" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="TheMainDiseaseCodeMKB10" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="Recommendations" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="DoctorName" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="ViewingDate" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="FirstInspection" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="RepeatInspection" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="EmptyField1" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="RightEye" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="SferaCilindrPravGlaz" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="SignOfVizionPravGlaz" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="CorrectionPravGlaz" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="TotalValuePravGlaz" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="LeftEye" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="SferaCilindrLeviyGlaz" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="SignOfVizionLeviyGlaz" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="CorrectionLeviyGlaz" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="TotalValueLeviyGlaz" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="EmptyField2" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="PatientStatus" />
+              <ColumnExpression ColumnOwner="TableOft1" ColumnName="Primechaniya" />
+            </SelectedColumns>
+            <Filters>
+              <Filter Operator="&gt;=" Param="True">
+                <ColumnExpression ColumnOwner="TableOft1" ColumnName="ViewingDate" />
+              </Filter>
+            </Filters>
+          </QueryDefinition>
+        </rd:DesignerState>
+      </Query>
+      <Fields>
+        <Field Name="SurName">
+          <DataField>SurName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FirstName">
+          <DataField>FirstName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Patronymic">
+          <DataField>Patronymic</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Gender">
+          <DataField>Gender</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DateOfBirth">
+          <DataField>DateOfBirth</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Age">
+          <DataField>Age</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Department">
+          <DataField>Department</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HistoryNumber">
+          <DataField>HistoryNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Complaints">
+          <DataField>Complaints</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Anamnesis">
+          <DataField>Anamnesis</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ObjectiveStatus">
+          <DataField>ObjectiveStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OngoingManipulations">
+          <DataField>OngoingManipulations</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IndicationOfEthambutol">
+          <DataField>IndicationOfEthambutol</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Ethambutol–°ontraindicated">
+          <DataField>Ethambutol–°ontraindicated</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="PresenceOfAIDS">
+          <DataField>PresenceOfAIDS</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DiagnosisDescription">
+          <DataField>DiagnosisDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodeOfDiseaseMKB10">
+          <DataField>CodeOfDiseaseMKB10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GroupeOfDiseasesMKB10">
+          <DataField>GroupeOfDiseasesMKB10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TheMainDiseaseCodeMKB10">
+          <DataField>TheMainDiseaseCodeMKB10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Recommendations">
+          <DataField>Recommendations</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DoctorName">
+          <DataField>DoctorName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ViewingDate">
+          <DataField>ViewingDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FirstInspection">
+          <DataField>FirstInspection</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="RepeatInspection">
+          <DataField>RepeatInspection</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="EmptyField1">
+          <DataField>EmptyField1</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="RightEye">
+          <DataField>RightEye</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SferaCilindrPravGlaz">
+          <DataField>SferaCilindrPravGlaz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SignOfVizionPravGlaz">
+          <DataField>SignOfVizionPravGlaz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CorrectionPravGlaz">
+          <DataField>CorrectionPravGlaz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TotalValuePravGlaz">
+          <DataField>TotalValuePravGlaz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LeftEye">
+          <DataField>LeftEye</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SferaCilindrLeviyGlaz">
+          <DataField>SferaCilindrLeviyGlaz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SignOfVizionLeviyGlaz">
+          <DataField>SignOfVizionLeviyGlaz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CorrectionLeviyGlaz">
+          <DataField>CorrectionLeviyGlaz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TotalValueLeviyGlaz">
+          <DataField>TotalValueLeviyGlaz</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmptyField2">
+          <DataField>EmptyField2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PatientStatus">
+          <DataField>PatientStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Primechaniya">
+          <DataField>Primechaniya</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix2">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>8.33125mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>19.04375mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>36.17495mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>8.20209mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>7.40834mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>9.64958mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>9.20422mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>10.44792mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>8.33126mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>12.56457mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>14.41667mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>25.53543mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>13.35833mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>12.29999mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>38.22916mm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>27.64583mm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>35.36875mm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox43">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–ù–æ–º–µ—Ä –ø/–ø</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox43</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <WritingMode>Rotate270</WritingMode>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox18">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–î–∞—Ç–∞</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <WritingMode>Rotate270</WritingMode>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox45">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–§–ò–û –ø–∞—Ü–∏–µ–Ω—Ç–∞</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox25">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–í–æ–∑—Ä–∞—Å—Ç</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox25</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <WritingMode>Rotate270</WritingMode>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox27">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–ü–æ–ª</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox27</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <WritingMode>Rotate270</WritingMode>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox29">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–ü–µ—Ä–≤–∏—á–Ω—ã–π 0</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox29</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <WritingMode>Rotate270</WritingMode>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox31">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–ü–æ–≤—Ç–æ—Ä–Ω—ã–π 1</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox31</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <WritingMode>Rotate270</WritingMode>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox33">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–û—Ç–¥–µ–ª–µ–Ω–∏–µ</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox33</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <WritingMode>Rotate270</WritingMode>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox35">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–ù–æ–º–µ—Ä –∏—Å—Ç–æ—Ä–∏–∏ –±–æ–ª–µ–∑–Ω–∏</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox35</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <WritingMode>Rotate270</WritingMode>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox37">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–î–∏–∞–≥–Ω–æ–∑ –ø–æ –ú–ö–ë-10 –¥–æ –≤—Ç–æ—Ä–æ–≥–æ –∑–Ω–∞–∫–∞</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox37</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox6">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–≠—Ç–∞–º–±—É—Ç–æ–ª –ø—Ä–æ—Ç–∏–≤–æ–ø–æ–∫–∞–∑–∞–Ω</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <WritingMode>Rotate270</WritingMode>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox39">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–ù–∞–ª–∏—á–∏–µ –í–ò–ß-–∏–Ω—Ñ–µ–∫—Ü–∏–∏</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox39</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <WritingMode>Rotate270</WritingMode>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox41">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–ú–∞–Ω–∏–ø—É–ª—è—Ü–∏–∏</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox41</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>–ü—Ä–∏–º–µ—á–∞–Ω–∏—è</Value>
+                                  <Style>
+                                    <FontSize>11pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#666666</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>6mm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox10">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=RowNumber("DataSet1")</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox10</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ViewingDate">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ViewingDate.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Format>d</Format>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ViewingDate</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="SurName">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!SurName.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>SurName</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Age">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Age.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Age</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Gender">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Gender.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Gender</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="FirstInspection">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=IIf(Fields!FirstInspection.Value = TRUE, "x", " ")</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>FirstInspection</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="RepeatInspection">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=IIf(Fields!RepeatInspection.Value = TRUE, "x", " ")</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>RepeatInspection</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Department">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Department.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Department</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="HistoryNumber">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!HistoryNumber.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>HistoryNumber</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TheMainDiseaseCodeMKB10">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                   <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Ethambutol–°ontraindicated</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="OngoingManipulations">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!OngoingManipulations.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OngoingManipulations</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Primechaniya">
+                          <CanGrow>true</CanGrow>
+                          <CanShrink>true</CanShrink>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Primechaniya.Value</Value>
+                                  <Style>
+                                    <FontWeight>Normal</FontWeight>
+                                    <Color>#333333</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Primechaniya</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="–ü–æ–¥—Ä–æ–±–Ω–æ—Å—Ç–∏1" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <RepeatColumnHeaders>true</RepeatColumnHeaders>
+            <RepeatRowHeaders>true</RepeatRowHeaders>
+            <FixedColumnHeaders>true</FixedColumnHeaders>
+            <FixedRowHeaders>true</FixedRowHeaders>
+            <DataSetName>DataSet1</DataSetName>
+            <Top>17.62125mm</Top>
+            <Left>0mm</Left>
+            <Height>41.36875mm</Height>
+            <Width>260.84335mm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Textbox Name="ReportTitle">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>–ñ—É—Ä–Ω–∞–ª –∫–æ–Ω—Å—É–ª—å—Ç–∞—Ü–∏–π –≤—Ä–∞—á–∞-–æ—Ñ—Ç–∞–ª—å–º–æ–ª–æ–≥–∞. –•–∞–π—Ä—É–ª–∏–Ω–æ–π –ï.–ê.</Value>
+                    <Style>
+                      <FontFamily>Segoe UI Light</FontFamily>
+                      <FontSize>26pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:WatermarkTextbox>Title</rd:WatermarkTextbox>
+            <rd:DefaultName>ReportTitle</rd:DefaultName>
+            <Top>0mm</Top>
+            <Height>12.7mm</Height>
+            <Width>259.78501mm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <Height>58.99mm</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>260.84335mm</Width>
+      <Page>
+        <PageHeight>21cm</PageHeight>
+        <PageWidth>29.7cm</PageWidth>
+        <LeftMargin>2.9cm</LeftMargin>
+        <RightMargin>0.6cm</RightMargin>
+        <TopMargin>0.6cm</TopMargin>
+        <BottomMargin>0.6cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="ViewingDate">
+      <DataType>DateTime</DataType>
+      <Prompt>–í–≤–µ–¥–∏—Ç–µ –¥–∞—Ç—É (–º–µ—Å—è—Ü –∏ –≥–æ–¥):</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>ViewingDate</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>d5993300-b7f6-43d3-8054-db7f762031bf</rd:ReportID>
+</Report>                                                                                                                                                                              ¿"òºÅ©ª_…JÑ˚@÷_&˛Õ≥ÿ@0Z¿™‘Ämz	0ÔpÒp∆ÃÊñx¿^$æ}ïÇY@Y¸ÚD‡ ;ê/«¬ÌøÄôÂææ?[b¿GmÆ]ûwXxª;1<JÇ,†y#`ÜáD0è“Nn‡8li∞ÙÇO3Å Rpì∂<J_πÅ”¿∂D~-¥Uí;•®…Æ;†ºè‡:î‘¿‹;r¿¶x4‚î"pFX=áár <•¬õíú5 ≈»)EH˜òªÅqnŸeOÃI≠ 'g`™ôœºœ˛*p•
+∞§öVsÑ©Xät*æeM∆∏—©¯É©47∫—]1ó9#3l∏ª‚+v§FXµª"∞·¨Œ@¨µ¿!`˜2BÁÆ∏ë	ò„ÅE0ìÄ=ƒ¶∏á	Ë9‡ÑÑ'«\åì<öw6≈˚|<•61√Ã6¿ƒ¶x î0ÅeK	0ˆA≥).b*∫Ïó#
+i\¿®Ñ‰ #
+Í†‚¬Ê·6¯Å™†‹¿˝}†∆,Ñ™_ÅÅlBBElòa—«‰◊:.68¨Ä•	(«Äïl.kô
+˝#
+“@ﬂï ≥∞2 &qê–V‡‹=8Té(Ãc.uÄÏ&Pãæ®¬˝…	ä,Hî6)´ÊîTh9Â®‡¡Y^
+úVπŸQ°Qò%Åc∏â†22Q®Pb∆Ø ‡¬
+J@} ó9*»?ÅéœLáÚsÅÖphRx˝óˇ
+‹òWZLÈ˚‰_2±,òœÃˆïCëô˚√^ãGL˚‰39Ö⁄∂}a(’ﬂŸ˘E†æÍ>˘o¿“*8|r€>˘8‡xƒ5Úl‹€„∏$3SR¡√˘fÊﬂû°,,M	ˇ9yœÖÂ8a»å5ê´@Ó®ë¶g`µåF† ˛36p_“Øëˇ2hª—Z~6pXBÉC”hRÇGÄµ<p¢ XTñÊÅì¶µº73®!	fäS)–‡»?ÂÚx Ä<`£$òﬂA"óÅ9ò2Å) d˛O9`	vòW…Iˇ†∫(∞C¥!Æ
+TÎÂÅciá\4∞3ô	úÂE·πg\@É!˚áw»}d ’ä≈†‰ë
+jDÌêfz;p;‰Æ3qÔ1aeØŒêB“Gô‹^‡ñîTpÍ6ï‡M— ¯◊ÅU<âõ ˘≥ çN√f‰ÇCÍ≥Ï#`**ÚgYq–Ñx¢¬ﬂÀ	PÇbrûqr••yzÅÁßAÌ/Pz)∫LÛíòÀÄA	¥ƒ›$lï@ÊI@⁄$ª8Ω!Ú
+duYÅÅs^ÅÏVH3 ‘Õ.&l`Œ&t®‹"`#X  ≠ÒıdüqÉ)òj ˝ f#»L0DJ8ÜiBÅK$=Yq†É¿sx@ﬁ[ôp`>Ô¯ÕÀFXHËp≤[ÙVf:∞^ äÄ«€¡ÁÅ9≤dˆ≠Ã}Œl`è îæ¿‹n‡Ä,0âÇÃ^-ÛòX=¶∑9ÄyÄı∞ñ≥ÅÎà*SpÀ8.òótXàÅ4ë∂>K&ò∏∂XíÄìgñL¥®Å‰ò”ÅÕ∞©Y2ﬁ†10Pπù%sôãk™spÛ)P $ßlBA˚ÃY2Yú¿)`xÅÇÅ‰Ä‘¶!≥òó_™SfJ*ÿraˆ‹|`sQCf2pBk=3[¸SEf˛Koß2Ä∞ö&U`yé.‡™P˚OCÊì≥!«‡é^ÚîÁ“ﬁ¨_Ä>óæ,ÌAeò≈Ãôy¿ËV–œ•9ÿô_nÁ:!ˆüX!‰Å"§k©t83®a¨-!‹G¿;∏c
+å•“¬¨¿4|4êÀÕÃﬂÃ¿ -‹¿*ÊsÁ◊Æ Kú•“YlÃîôŸ¯tWàq}ˆnQ	◊eï• ÎÄ™S§ŸA¨◊@HëNÊuÄe>»∂ÈL¿ 	º I%Èp6P,3^v>0@ƒ≤∏@≥J`ŒC)VpÃûÃ
+,|Ä rÄ P`æ‘|.`1lÇ§ÁK≈G<rr2Û!ôpæ‘+Ç¨í§Dàba`yí\vîebäì‚`ÊùŸ≈öóZöôûsmú‘e`2–⁄_F
+∏h6n2R;Ÿ¡˚ñòÄÃµLÏ¿—-‡¨)pûË"∞¥p&ò˙AÛ«∑%Á±0ãIÚppÂ	•É™=P∆*∫-Y…Ùpxƒë	»Â`·*ãÛÇÀ'C|}[r0öÅ≠9Pà›ñÏg7WA…„∂§0+ó}ËH°Jı3%ìÄyˆ¶d?»<P ÁáL®A8ô¿é÷“¿DÒıL…EL¿Ò*P”<u`¡Wl@áCÍâô@Û⁄6`Vi:h§∞ÖTs?–˚‡‚!\∏p≤|l~∏‰<‡Zy)§q#&9ôí A,&	Ó5(≈$AIXnÄŸví≈@ØÉ\ &πXøÎe`˛É¶41…nË»$0ËRA√?W$‘X@ÃË+˛ÃEâ%¿∞∆
+àÀœt5¥\[qEÇT∞Çmá≠/ªÛû1◊à É»ô,°úkÍ∫†’à@üÁMŸ2Y‚KqpƒXÒ0yI,\wñÃÓÁ.åÜhåÁÉ4É@éò,¡√,èÅı0ùLñ®‰ÂñPŸ ÃØ˛G8¢\î	—ê≈ñññÙC1∞Ñƒ—d	–È:¿,„∆s”∞K¥2P‚3ˇˆ8÷“ºƒ$`-êóû	róÄƒÊÇ¢ƒ
+pÈ( Q…≠≤Ä:$X¯=y∏Åc]©¿Ñíécv≠ÀAsÅ<P2ö$& G•A—	7â$fpÙÉŸ-lÂ©@6»{Áƒ˘Ÿ·I›ÁƒsôÅõ÷z∏èø•êä¯úx3–V†f®ˆµ¿lö	
+NP~9'æ
+∏b(	.º¡èò¿°Ùƒ9ÒØú‹C¨Ä-F‡rê;{≈O3•eÇ'‡AúW†d
+≠e!"@Àlä¡%JØ∏!+Ë<”$`ØÃ]∆I˛≈∞z≈ €£0’,º–∂3ÿ,oqfpK,ëﬁ‚¬ÃÏ3-ó≥ '+Åmwêõ”Å©î*Ω≈Ô±ÄV&Ç¢ [‹Öãk}P;∞˝	üÑˆˇ√>„4∏T©∂…´Ä≥¨Pwsâ´±ÅÜ;ŸÄ¨õÈ,ã'ºeaãOı∏Œ™ßÃ¬m4Ÿàâ7⁄üô8
+I\‚AÎHÄÅ5.Òç†"˝ ˘b¬¿·h‡Ä9∞;	Ê:\˚Éy.¿1ê¨|BÃÜyÏ,$«úldÄ-jÛv∫`+˝€≈‘XÅŒÑq>ÇfÕ@ÒN&Ìb,@}ô†dÊ˘p›.\≈¶õ[¿%	â†âRW±?,‹ˆ•JÃ¸Œ⁄ªAæ Æ‘¶∞ôÆb¿ô&†q¿ïû%ôe†’«ÆbÎÿôwÿm‰dKcãfÊÆ–¥ÜTA~0r ⁄íÄ[t2Åëóö8›cˆn3AU?Tç8∞HÑî° AS%df, "ñ\€Ll¿»sgÛ √ò·¿	ùE,X A⁄lPÂ•leôâ¿%[¿öìEl-˜πÌÔxÓ™®1Ò
+üscpl–v™`qrHÙSe>p•.ê˘ïôôèwéÀSf.6)~nVˆıE¿¡?ï-L‹ˇÂ€ôyØX‘∞Ò«øc8∆˝î-∏HlD)3®ŒÉòƒt)êj•uaÂÍw∫≈åê‘¥¸<P⁄Áı‘O`ºÅ'!D„@)RÚ7àûgáéÄ=’   /îD{ÿ‡≈)ò_…ñ•ˆ—4ÆÈU¢¿æ˜6`5~3∞gûYÃ‚¿º\"˙T] Gƒ¿1c/∫ï)X—ı€ãﬁf·l‰G)0™ Å1˛W‰3Û\˝Eúl[4¶∞q9küÁ ['¿5!";ò∏≠Ê€1ÚN˜3O—%Ìø"/ôA
+ûø"˜òAg¨Äô∑y ï	»{D¿ŸËê≤="ÀÄT§∫Gd∞¸Äˆ˜àT2ù
+¨ª Èqè»&P
+™ Ü&àœú⁄á	»∞*ëE¨¿ösI
+8TâÄ˜®ì=PG1»P∞1U"_ŸrKsJ2A˘*8ŒT%rãôπSÒKÇÍ–‘…:&v=YÓ:ÆÀL<ñ"?ÿ˘ù≥ó0	ÙäÔ5^s@áRÄÕ…zò–AÅ_%¬ÕÃΩ/~!®ˇåûLàã´DÄc˙â†YÉ*ëÈ,¿¶-DÿRd{^>∞w=Ñ›R§4–™Ó¿º≠L†úÏ-EíòÅM“<PQa)Úà8)Ã‰†•$`Å¬Ÿ¿^pFåëÈª0KUj»ÑÔ¬j¨† ËÆÔ¬ÁôπhÒÄ≤6h¶`5¿%¿	ëÔ¬GòÄïzx~„ªp–Õ¿Ã	n}^	\1L-–;ë@Ê„XòÅÛ70%02mæ«‹ﬁîV∞Mt:0∂s°&lŒ6Íí3@ÈÃÆ  ) ıÇÏÚŸ¡yæUhSF>¯≥m¬ßYÄç/`˙vÅP®Dx2Wï®◊["|C<|IÈ%@mπ©%†∂3ê∑ñïãÉÁ30;ã&∞¡∆¬ÛXã2ã°5ä1P=¨ÚnG’r ¡Ø,`◊Äk9®∫ê-• ◊∫ŒÚ$?
+7#Ç¬:≠QË3$ˆAj7ïe°=E0üXB ˜7≠dŒ’wÃ@¶;◊C©@Ó+RÇÂ¿Ï 4§+O®í9;òWYÄÃ4NÊ˜È«xÅ_yπ˘_dHu- „Â¿:BÃÃoÊDá'Å≥ü`Ω¿ÑRXô'¥π	 4`—ïLe¿¥  7–Ùò'ÃÂÇ’yBœ@Ï¸îÇ˘:Bè@˜IΩ	·e7TÄ¶:Ä˙A÷ÚÁ ·ÉÏ-\–q˚k¡ELÃ≠‹	,\
+f,Ç∑~Z3 3%0çÇS˘k¡?ÃêiEê£¿ø‘e:ÿÓïù†∏ôñ?pnÛ˘ŸÄX¸	Æe·g?sêâÉW
+Á∏ ÎC@n[)x4v .•!Q∏R∞ÿeOÊ^6ŒÅCÓ¿v0HCÜ†¨ s/◊¬dÇR.êÕ uD°úX◊+ÌºTà‡≤/†Â†¡†2êH.p˛ÿ= ≤’Ä˛ ÂΩås5¡a6ÓE<LÏ|º›ú†rÏf5A
