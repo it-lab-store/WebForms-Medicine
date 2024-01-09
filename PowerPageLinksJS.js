@@ -15,5 +15,6 @@ window.open("http://localhost/OsmotrOftalmologa/report/Rep/Коды%20МКБ10")
 
 function OpenLinkStartOsmotr()
 {
-window.open("http://127.0.0.1:108");
+ window.open("OsmotrFormPage.html")	
+// window.open("http://127.0.0.1:108");
 }
